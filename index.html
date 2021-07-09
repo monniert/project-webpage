@@ -1,0 +1,280 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DTI Clustering</title>
+  <meta name="description" content="Project page for Deep Transformation-Invariant Clustering.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta charset="utf-8">
+
+  <!--Facebook preview-->
+  <meta property="og:image" content="https://imagine.enpc.fr/~monniert/DTIClustering/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="400">
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://imagine.enpc.fr/~monniert/DTIClustering/"/>
+  <meta property="og:title" content="DTI Clustering"/>
+  <meta property="og:description" content="Project page for Deep Transformation-Invariant Clustering."/>
+
+  <!--Twitter preview-->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DTI Clustering" />
+  <meta name="twitter:description" content="Project page for Deep Transformation-Invariant Clustering."/>
+  <meta name="twitter:image" content="https://imagine.enpc.fr/~monniert/DTIClustering/thumbnail_twitter.png">
+
+  <!--Style-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container" style="text-align:center; padding:2rem 15px">
+  <div class="row" style="text-align:center">
+    <h1>Deep Transformation-Invariant Clustering</h1>
+    <h4>NeurIPS 2020 (oral presentation)</h4>
+  </div>
+  <div class="row" style="text-align:center">
+    <div class="col-xs-0 col-md-3"></div>
+    <div class="col-xs-12 col-md-6">
+      <h4>
+        <a href="https://imagine.enpc.fr/~monniert/"><nobr>Tom Monnier</nobr></a> &emsp;
+        <a href="https://imagine.enpc.fr/~groueixt/"><nobr>Thibault Groueix</nobr></a> &emsp;
+        <a href="https://imagine.enpc.fr/~aubrym/"><nobr>Mathieu Aubry</nobr></a>
+      </h4>
+      LIGM, <nobr>&Eacute;cole des Ponts</nobr>, <nobr>Univ Gustave Eiffel</nobr>, CNRS,
+      <nobr>Marne-la-Vall&eacute;e, France</nobr>
+    </div>
+    <div class="hidden-xs hidden-sm col-md-1" style="text-align:left; margin-left:0px; margin-right:0px">
+      <a href="https://arxiv.org/pdf/2006.11132.pdf" style="color:inherit">
+        <i class="fa fa-file-pdf-o fa-4x"></i></a> 
+    </div>
+    <div class="hidden-xs hidden-sm col-md-2" style="text-align:left; margin-left:0px;">
+      <a href="https://github.com/monniert/dti-clustering" style="color:inherit">
+        <i class="fa fa-github fa-4x"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="text-align:center; padding:1rem">
+  <img src="resrc/teaser.jpg" alt="teaser.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+  <h3 style="text-align:center; padding-top:1rem">
+    <a class="label label-info" href="https://arxiv.org/abs/2006.11132">Paper</a>
+    <a class="label label-info" href="https://github.com/monniert/dti-clustering">Code</a>
+    <a class="label label-info" href="https://www.youtube.com/embed/j20MBc1hWGQ">Video</a>
+    <a class="label label-info" href="resrc/dtic_long.pptx">Slides</a>
+    <a class="label label-info" href="resrc/ref.bib">BibTeX</a>
+  </h3>
+</div>
+
+<div class="container">
+  <h3>Abstract</h3>
+  <hr/>
+  <p>
+    Recent advances in image clustering typically focus on learning better deep 
+    representations. In contrast, we present an orthogonal approach that does not rely on 
+    abstract features but instead learns to <b>predict image transformations</b> and directly performs 
+    <b>clustering in pixel space</b>. This learning process naturally fits in the 
+    gradient-based training of K-means and Gaussian mixture model, without requiring any 
+    additional loss or hyper-parameters. It leads us to two new deep transformation-invariant
+    clustering frameworks, which <b>jointly learn prototypes and transformations</b>. More 
+    specifically, we use deep learning modules that enable us to resolve invariance to spatial, 
+    color and morphological transformations. Our approach is conceptually simple and comes with 
+    several advantages, including the possibility to easily adapt the desired invariance to the 
+    task and a <b>strong interpretability</b> of both cluster centers and assignments to clusters.  We 
+    demonstrate that our novel approach yields <b>competitive and highly promising results</b> on 
+    standard image clustering benchmarks. Finally, we showcase its robustness and the 
+    advantages of its improved interpretability by visualizing clustering results over real 
+    photograph collections.
+  </p>
+
+  <h3>Video</h3>
+  <hr/>
+  <div class="row" style="text-align:center">
+    <div class="col-xs-6 text-center">
+      <h4><u>Short presentation</u> (3min)</h4>
+      <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
+        <iframe class="embed-responsive-item text-center" src="https://www.youtube.com/embed/j20MBc1hWGQ" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          style="width:100%; clip-path:inset(1px 1px);" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="col-xs-6 text-center">
+      <h4><u>Long presentation</u> (11min)</h4>
+      <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
+        <iframe class="embed-responsive-item text-center" src="https://www.youtube.com/embed/xhLUOh5PKBA" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          style="width:100%; clip-path:inset(1px 1px);" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <h3>Approach</h3>
+  <hr/>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <h4 style="margin-right: 20%"><u>DTI framework</u></h4>
+    </div>
+    <div class="col-xs-6">
+      <h4><u>Deep transformation module 
+          <img src="http://latex.codecogs.com/svg.latex?\mathcal{T}_{f_{k}}" alt="T_f_k" border="0"/></u></h4>
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <img src="resrc/dti.png" alt="dti.png" class="text-center" style="width: 100%; max-width: 900px">
+    </div>
+    <div class="col-xs-6">
+      <img src="resrc/deep_tsf.png" alt="deep_tsf.png" class="text-center" style="width: 90%; max-width: 900px; margin-top:
+      10px">
+    </div>
+  </div>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-6">
+      <div style="width: 90%; max-width: 900px; padding-top:10px">
+      <p>Given a sample <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/> and prototypes 
+      <img src="http://latex.codecogs.com/svg.latex?c_1" alt="c_1" border="0"/> and 
+      <img src="http://latex.codecogs.com/svg.latex?c_2" alt="c_2" border="0"/>, standard clustering such as K-means 
+      assigns the sample to the closest prototype. Our DTI clustering first aligns prototypes to the sample using a
+      family of parametric transformations - here rotations - then picks the prototype whose alignment yields the 
+      smallest distance.</p>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div style="width: 100%; max-width: 900px; padding-top:10px">
+        <p>We predict alignment with deep learning. Given an image 
+      <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/>, each deep parameter predictor 
+      <img src="http://latex.codecogs.com/svg.latex?f_k" alt="f_k" border="0"/> predicts 
+      parameters for a sequence of transformations - here affine, morphological and thin plate spline transformations -
+      to align the prototype <img src="http://latex.codecogs.com/svg.latex?c_k" alt="c_k" border="0"/>
+      to the query image <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/>.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Results</h3>
+  <hr/>
+  <div class="row" style="text-align: center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+    <h4><u>Standard image clustering benchmarks</u></h4>
+      <img src="resrc/prototypes.jpg" alt="prototypes.jpg" class="text-center" style="width: 100%; max-width: 1000px;">
+  </div>
+  <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+    <h4><u>MegaDepth locations</u></h4>
+      <img src="resrc/megadepth.jpg" alt="megadepth.jpg" class="text-center" style="width: 100%; max-width: 1000px;
+      margin-top: 5px">
+  </div>
+  <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+    <h4><u>MegaDepth Florence: detailed results</u></h4>
+      <p>We show the 6 best qualitatives prototypes learned using DTI clustering
+      with 20 clusters for Florence location in MegaDepth dataset. For each cluster, we show the 20 samples leading to
+      minimal reconstruction errors among all the samples in the cluster as well as corresponding transformed 
+      prototypes. Note how it manages to model real image transformations like illumination variations and viewpoint
+      changes.</p>
+      <img src="resrc/firenze.jpg" alt="firenze.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+  </div>
+  <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem;padding-bottom:1rem;">
+    <h4><u>Instagram hashtags</u></h4>
+      <p>We show the 5 best qualitatives prototypes learned using DTI clustering
+      with 40 clusters for different Instagram photo collections. Each collection corresponds to a large unfiltered set
+      of Instagram images (from 10k to 15k) associated to a particular hashtag. Identifying visual trends or iconic
+      poses in this case is very challenging as most of the images are noise. You can visualize the type of collected 
+      images directly in Instagram: 
+      <a href=https://www.instagram.com/explore/tags/balitemple/>#balitemple</a>,
+      <a href=https://www.instagram.com/explore/tags/santaphoto/>#santaphoto</a>,
+      <a href=https://www.instagram.com/explore/tags/trevifountain/>#trevifountain</a>,
+      <a href=https://www.instagram.com/explore/tags/weddingkiss/>#weddingkiss</a>,
+      <a href=https://www.instagram.com/explore/tags/yogahandstand/>#yogahandstand</a>.</p>
+      <img src="resrc/instagram.jpg" alt="instagram.jpg" class="text-center"
+           style="width:100%;max-width:850px;margin-top:1rem;padding-right:1.5rem;">
+  </div>
+
+  <h3>Resources</h3>
+  <hr/>
+  <div class="row" style="text-align: center">
+    <div class="col-xs-0 col-lg-0"></div>
+    <div class="col-xs-4 col-lg-4">
+      <h4>Paper</h4>
+      <a href="https://arxiv.org/abs/2006.11132" style="color:inherit">
+        <img src="resrc/paper.jpg" alt="paper.jpg" class="text-center" style="max-width:70%; border:0.15em solid;
+        border-radius:0.5em;"></a>
+    </div>
+    <div class="col-xs-4 col-lg-4">
+      <h4>Code</h4>
+      <a href="https://github.com/monniert/dti-clustering" style="color:inherit;">
+        <img src="resrc/github_repo.png" alt="github_repo.png" class="text-center"
+             style="max-width:70%; border:0.15em solid;border-radius:0.5em;"></a>
+    </div>
+    <div class="col-xs-4 col-lg-4">
+      <h4>Slides</h4>
+      <a href="dtic_long.pptx" style="color:inherit;">
+        <img src="resrc/slides.png" alt="slides.png" class="text-center"
+             style="max-width:70%; border:0.15em solid;border-radius:0.5em;"></a>
+    </div>
+    <div class="col-xs-0 col-lg-0"></div>
+  </div>
+    <h4 style="padding-top:0.5em">BibTeX</h4>
+    If you find this work useful for your research, please cite:
+    <div class="card">
+      <div class="card-block">
+        <pre class="card-text clickselect">
+@inproceedings{monnier2020dticlustering,
+  title={{Deep Transformation-Invariant Clustering}},
+  author={Monnier, Tom and Groueix, Thibault and Aubry, Mathieu},
+  booktitle={NeurIPS},
+  year={2020},
+}</pre>
+      </div>
+    </div>
+
+  <h3>Further information</h3>
+  <hr/>
+  If you like this project, please check out other related works from our group:
+  <h4>Follow-ups</h4>
+  <ul>
+    <li>
+      <a href="https://arxiv.org/abs/2104.14575">Monnier et al. - Unsupervised Layered Image Decomposition into Object
+        Prototypes (arXiv 2021)</a>
+    </li>
+  </ul>
+
+  <h4>Previous works on deep transformations</h4>
+  <ul>
+    <li>
+      <a href="https://arxiv.org/abs/1908.04725">Deprelle et al. - Learning elementary structures for 3D shape
+        generation and matching (NeurIPS 2019)</a>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/1806.05228">Groueix et al. - 3D-CODED: 3D Correspondences by Deep Deformation (ECCV
+        2018)</a>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/1802.05384">Groueix et al. - AtlasNet: A Papier-Mache Approach to Learning 3D
+        Surface Generation (CVPR 2018)</a>
+    </li>
+  </ul>
+
+
+  <h3>Acknowledgements</h3>
+  <hr/>
+  <p>
+    This work was supported in part by <a href="https://enherit.enpc.fr/">ANR project EnHerit</a> ANR-17-CE23-0008,
+    project Rapid Tabasco, gifts  from  Adobe and HPC resources from GENCI-IDRIS (Grant 2020-AD011011697). We thank 
+    Bryan Russell, Vladimir Kim, Matthew Fisher, Fran&#231;ois Darmon, Simon Roburin, David Picard, Michael 
+    Ramamonjisoa, Vincent Lepetit, Elliot Vincent, Jean Ponce, William Peebles and Alexei Efros for inspiring 
+    discussions and valuable feedback.
+  </p>
+</div>
+
+<div class="container" style="padding-top:3rem; padding-bottom:3rem">
+  <p style="text-align:center">
+  &#169; This webpage was in part inspired from this
+  <a href="https://github.com/monniert/project-webpage">template</a>.
+  </p>
+</div>
+
+</body>
+</html> 
