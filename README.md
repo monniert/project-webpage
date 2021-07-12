@@ -1,7 +1,8 @@
 # project-webpage
 
 This is a template for a project webpage. You are welcome to use it to present your exciting 
-works, please attribute its source with a link back to this repository.
+works, please attribute its source with a link back to this repository. An example of use can 
+be found [here](http://imagine.enpc.fr/~monniert/DTI-Sprites/).
 
 ![resrc/preview.png](resrc/preview.png)
 
