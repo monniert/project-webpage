@@ -33,10 +33,15 @@
 <body>
 
 <div class="container" style="text-align:center; padding:2rem 15px">
-  <div class="row" style="text-align:center">
-    <h1>Open Guide -- A Scalable Human-Like Guidance System For Visually Impaired Travelers
+  <img src="images/BostonU-OpenGuide_0-Copy.png" alt="BostonU-OpenGuide_0-Copy.png" class="text-center" style="width: 100%; max-width: 1100px">
+  <div class="row" style="color: #4c4b4b;
+  font-size: 36px;
+  text-align: left;
+  font-family: Roboto Slab;
+  font-weight: 500;">
+    <h1> A Scalable Human-Like Guidance System For Visually Impaired Travelers
 </h1>
-    <h4>NeurIPS 2020 (oral presentation)</h4>
+    
   </div>
   <div class="row" style="text-align:center">
     <div class="col-xs-0 col-md-3"></div>
@@ -48,14 +53,13 @@
       Department of Electrical and Computer Engineering <nobr>&Eacute; Boston University</nobr>, USA</nobr>
     </div>
     <div class="hidden-xs hidden-sm col-md-1" style="text-align:left; margin-left:0px; margin-right:0px">
-      <a href="https://arxiv.org/pdf/2006.11132.pdf" style="color:inherit">
-        <i class="fa fa-file-pdf-o fa-4x"></i></a> 
+      
     </div>
   </div>
 </div>
 
-<div class="container" style="text-align:center; padding:1rem">
-  <img src="resrc/teaser.jpg" alt="teaser.jpg" class="text-center" style="width: 100%; max-width: 1100px">
+<!--div class="container" style="text-align:center; padding:1rem">
+  
   <h3 style="text-align:center; padding-top:1rem">
     <a class="label label-info" href="https://arxiv.org/abs/2006.11132">Paper</a>
     <a class="label label-info" href="https://github.com/monniert/dti-clustering">Code</a>
@@ -63,20 +67,26 @@
     <a class="label label-info" href="resrc/dtic_long.pptx">Slides</a>
     <a class="label label-info" href="resrc/ref.bib">BibTeX</a>
   </h3>
-</div>
+</div-->
 
 <div class="container">
-  <h3>About</h3>
+  
   <hr/>
-  <p>
-    OpenGuide builds upon the team’s previous work in assistive and autonomous navigation technologies through two holistic platforms which the team will develop in Stage II. OpenGuide-Benchmark will develop a large, standardized dataset with expert guidance annotations which can be used to train machine-learning models to provide door-to-car-to-door assistance for a person with visual impairments. OpenGuide-Assist consists of an assistive system interacting with its environment and providing personalized assistance to the user.
+  <p style = "color: #4c4b4b;
+  font-size: 28px;
+  text-align: left;
+  font-family: Roboto Slab;
+  font-weight: 400;">
+    Team OpenGuide builds upon their expertise in AI and personalized assistive technologies to realize an inclusive assistive 
+    navigation device that can flexibly meet the real-time needs of diverse users (e.g., various navigation skills, preferences, 
+    and mobility aids) in a context-dependent manner (e.g., indoors, outdoors, or in-vehicle) through two holistic platforms:
   </p>
 
   <h3>Video</h3>
   <hr/>
   <div class="row" style="text-align:center">
     <div class="col-xs-6 text-center">
-      <h4><u>Short presentation</u> (3min)</h4>
+      <h4><u>Open Guide</u> </h4>
       <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
         <iframe class="embed-responsive-item text-center" src="https://www.youtube.com/embed/mGq9sL1spzc" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -85,7 +95,7 @@
     </div>
 
     <div class="col-xs-6 text-center">
-      <h4><u>Long presentation</u> (11min)</h4>
+      <h4><u>X-world</u> </h4>
       <div class="embed-responsive embed-responsive-16by9" style="text-align:center">
         <iframe class="embed-responsive-item text-center" src="https://www.youtube.com/embed/YwWIZWg58" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -95,100 +105,32 @@
   </div>
 
   <h3>Related Publication</h3>
-  <hr/>
-  <div class="row" style="text-align: center">
-    <div class="col-xs-6">
-      <h4 style="margin-right: 20%"><u>DTI framework</u></h4>
-    </div>
-    <div class="col-xs-6">
-      <h4><u>Deep transformation module 
-          <img src="http://latex.codecogs.com/svg.latex?\mathcal{T}_{f_{k}}" alt="T_f_k" border="0"/></u></h4>
-    </div>
-  </div>
-  <div class="row" style="text-align: center">
-    <div class="col-xs-6">
-      <img src="resrc/dti.png" alt="dti.png" class="text-center" style="width: 100%; max-width: 900px">
-    </div>
-    <div class="col-xs-6">
-      <img src="resrc/deep_tsf.png" alt="deep_tsf.png" class="text-center" style="width: 90%; max-width: 900px; margin-top:
-      10px">
-    </div>
-  </div>
-  <div class="row" style="text-align: center">
-    <div class="col-xs-6">
-      <div style="width: 90%; max-width: 900px; padding-top:10px">
-      <p>Given a sample <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/> and prototypes 
-      <img src="http://latex.codecogs.com/svg.latex?c_1" alt="c_1" border="0"/> and 
-      <img src="http://latex.codecogs.com/svg.latex?c_2" alt="c_2" border="0"/>, standard clustering such as K-means 
-      assigns the sample to the closest prototype. Our DTI clustering first aligns prototypes to the sample using a
-      family of parametric transformations - here rotations - then picks the prototype whose alignment yields the 
-      smallest distance.</p>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <div style="width: 100%; max-width: 900px; padding-top:10px">
-        <p>We predict alignment with deep learning. Given an image 
-      <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/>, each deep parameter predictor 
-      <img src="http://latex.codecogs.com/svg.latex?f_k" alt="f_k" border="0"/> predicts 
-      parameters for a sequence of transformations - here affine, morphological and thin plate spline transformations -
-      to align the prototype <img src="http://latex.codecogs.com/svg.latex?c_k" alt="c_k" border="0"/>
-      to the query image <img src="http://latex.codecogs.com/svg.latex?x_i" alt="x_i" border="0"/>.</p>
-      </div>
-    </div>
-  </div>
-
- 
   </div>
     <h4 style="padding-top:0.5em">BibTeX</h4>
     If you find this work useful for your research, please cite:
     <div class="card">
       <div class="card-block">
         <pre class="card-text clickselect">
-@inproceedings{monnier2020dticlustering,
-  title={{Deep Transformation-Invariant Clustering}},
-  author={Monnier, Tom and Groueix, Thibault and Aubry, Mathieu},
-  booktitle={NeurIPS},
-  year={2020},
+@inproceedings{zhang2021x,
+  title={X-World: Accessibility, Vision, and Autonomy Meet},
+  author={Zhang, Jimuyang and Zheng, Minglan and Boyd, Matthew and Ohn-Bar, Eshed},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9762--9771},
+  year={2021}
+},
 }</pre>
       </div>
     </div>
 
   <h3>Further information</h3>
-  <hr/>
-  If you like this project, please check out other related works from our group:
-  <h4>Follow-ups</h4>
-  <ul>
-    <li>
-      <a href="https://arxiv.org/abs/2104.14575">Monnier et al. - Unsupervised Layered Image Decomposition into Object
-        Prototypes (arXiv 2021)</a>
-    </li>
-  </ul>
 
-  <h4>Previous works on deep transformations</h4>
-  <ul>
-    <li>
-      <a href="https://arxiv.org/abs/1908.04725">Deprelle et al. - Learning elementary structures for 3D shape
-        generation and matching (NeurIPS 2019)</a>
-    </li>
-    <li>
-      <a href="https://arxiv.org/abs/1806.05228">Groueix et al. - 3D-CODED: 3D Correspondences by Deep Deformation (ECCV
-        2018)</a>
-    </li>
-    <li>
-      <a href="https://arxiv.org/abs/1802.05384">Groueix et al. - AtlasNet: A Papier-Mache Approach to Learning 3D
-        Surface Generation (CVPR 2018)</a>
-    </li>
-  </ul>
+
 
 
   <h3>Acknowledgements</h3>
   <hr/>
   <p>
-    This work was supported in part by <a href="https://enherit.enpc.fr/">ANR project EnHerit</a> ANR-17-CE23-0008,
-    project Rapid Tabasco, gifts  from  Adobe and HPC resources from GENCI-IDRIS (Grant 2020-AD011011697). We thank 
-    Bryan Russell, Vladimir Kim, Matthew Fisher, Fran&#231;ois Darmon, Simon Roburin, David Picard, Michael 
-    Ramamonjisoa, Vincent Lepetit, Elliot Vincent, Jean Ponce, William Peebles and Alexei Efros for inspiring 
-    discussions and valuable feedback.
+    This work was supported in part by
   </p>
 </div>
 
